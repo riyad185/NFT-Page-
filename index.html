@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Page </title>
+     <!-- style sheet fot this page -->
+     <link rel="stylesheet" href="css/min.css">
+     <link rel="stylesheet" href="css/media.css">
+     <!-- REANDER ALL ELEMENTS NORMALLY -->
+     <link rel="stylesheet" href="css/normalize.css">
+         <!-- font awesome library  -->
+    <link rel="stylesheet" href="css/all.min.css">
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="con-logo">
+                <a href="#home">
+                <i class="fa-solid fa-store logo-nav"></i>
+                <span>NFT Marketplace</span>
+                </a>
+              </div>
+              <div class="nav-right">
+                <div class="links">   
+                    <ul class="sidebar">
+                      <li class="close-button" onclick="hideSidebar()" id="closeBtn" style="display:none;">
+                        <a href="#" class="no-effect">
+                          <i class="fas fa-xmark" style="font-size: 20px;"></i>
+                        </a>
+                      </li>
+                      
+                        <li>
+                        <a href="" class="line">Marketplace</a>
+                        </li>
+                        <li>
+                        <a href="" class="line">Rankings</a>
+                        </li>
+                        <li>
+                        <a href="" class="line">Connect a wallet</a>
+                        </li>
+                        <li><a href="#" class="line">Sign Up</a></li>
+                         </ul>           
+                    <ul>
+                   <li class="hideOnMobile">
+                   <a href="">Marketplace</a>
+                   </li>
+                   <li class="hideOnMobile">
+                   <a href="">Rankings</a>
+                   </li>
+                   <li class="hideOnMobile">
+                   <a href="">Connect a wallet</a>
+                   </li>
+                   <li class="menu-button" onclick="showSidebar()" id="menuBtn">
+                    <a href="#" class="no-effect">
+                      <i class="fa-solid fa-bars-staggered dis" style="font-size: 20px;"></i>
+                    </a>
+                  </li>
+                                      </ul>
+                  </div>
+                  <div class="btn hideOnMobile">
+                    <button class="btn-signup">
+                        <i class="fa-regular fa-user"></i>
+                        Sign Up
+                      </button>
+                    
+                  </div>
+            </div>
+              </div>
+    </nav>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        const menuBtn = document.getElementById('menuBtn')
+        const closeBtn = document.getElementById('closeBtn')
+    
+        sidebar.style.display = 'flex'
+        menuBtn.style.display = 'none'   // اخفي زر menu
+        closeBtn.style.display = 'block' // اظهر زر X
+      }
+    
+      function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        const menuBtn = document.getElementById('menuBtn')
+        const closeBtn = document.getElementById('closeBtn')
+    
+        sidebar.style.display = 'none'
+        menuBtn.style.display = 'block'  // اظهر زر menu
+        closeBtn.style.display = 'none'  // اخفي زر X
+      }
+    </script>
+    
+    
+</body>
+</html>
